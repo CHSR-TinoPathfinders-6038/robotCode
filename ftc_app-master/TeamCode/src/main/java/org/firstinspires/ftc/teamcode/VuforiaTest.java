@@ -100,7 +100,7 @@ public class VuforiaTest extends LinearOpMode {
             } else {
                 telemetry.addData("Pos", "Unknown");
             }
-            
+
             telemetry.update();
             idle();
         }
