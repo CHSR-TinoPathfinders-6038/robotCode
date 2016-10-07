@@ -123,7 +123,7 @@ public class ConceptVuforiaNavigation extends LinearOpMode {
          * {@link Parameters} instance with which you initialize Vuforia.
          */
         VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(R.id.cameraMonitorViewId);
-        parameters.vuforiaLicenseKey = "ATsODcD/////AAAAAVw2lR...d45oGpdljdOh5LuFB9nDNfckoxb8COxKSFX";
+        parameters.vuforiaLicenseKey = "AYTw69n/////AAAAGZROJBAVpEdKsT+9hnUy9dKDbkeZvkq2zplnloGCaGhc3v2g9MGSpLgnuI9kSxR2LHZBgLwuZ8a/vZe0sGDNwHeBjw4sOnG3ufrVA1Ba9JJ8K+fesVu6VKWXV7AKjzOZLDAi3lGwDnWhxpaisRIwgHZrQjNOfj8jLm11aFhPG5ZEWTUptuafiwOX9TlCsNsLxj4dYjLKwGascBPznV+zCo3s7601GM4Tv92pXCmzm0slzVjx355dWbb53ZsYEGCY4cAl3ofHXKOye2oWR6UAswtXAEseJsDUP6Iu0tUIGtI6/dao5kB47nlJ4XFK3sGtK3o1HjzGRHauZX8fXNx38FwJRC8J05toQ825c1KvcDn7";
         parameters.cameraDirection = VuforiaLocalizer.CameraDirection.BACK;
         this.vuforia = ClassFactory.createVuforiaLocalizer(parameters);
 
