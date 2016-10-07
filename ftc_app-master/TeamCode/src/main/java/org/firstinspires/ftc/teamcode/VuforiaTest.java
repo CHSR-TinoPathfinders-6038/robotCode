@@ -102,7 +102,6 @@ public class VuforiaTest extends LinearOpMode {
             }
             telemetry.update();
             idle();
-
         }
     }
 
