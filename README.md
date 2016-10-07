@@ -1,2 +1,2 @@
-# robotCode
-## This repository contains 6038's code - both Tele-Op and Autonomous
+## Robot Code
+#### This repository contains 6038's code - both Tele-Op and Autonomous
