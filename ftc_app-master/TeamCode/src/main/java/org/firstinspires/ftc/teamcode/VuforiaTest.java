@@ -29,10 +29,10 @@ public class VuforiaTest extends LinearOpMode {
     VuforiaLocalizer vuforia;
 
     @Override public void runOpMode() throws InterruptedException {
-        VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(R.id.cameraMonitorViewId);
-        parameters.vuforiaLicenseKey = VUF_KEY;
-        parameters.cameraDirection = VuforiaLocalizer.CameraDirection.BACK;
-        this.vuforia = ClassFactory.createVuforiaLocalizer(parameters);
+        VuforiaLocalizer.Parameters builder = new VuforiaLocalizer.Parameters(R.id.cameraMonitorViewId);
+        builder.vuforiaLicenseKey = VUF_KEY;
+        builder.cameraDirection = VuforiaLocalizer.CameraDirection.BACK;
+        this.vuforia = ClassFactory.createVuforiaLocalizer(builder);
 
         VuforiaTrackables visionTargets = this.vuforia.loadTrackablesFromAsset("FTC_2016-17");
         VuforiaTrackable target = visionTargets.get(0);
@@ -58,7 +58,7 @@ public class VuforiaTest extends LinearOpMode {
                         AngleUnit.DEGREES, -90, 0, 0));
 
         RobotLog.ii(TAG, "phone=%s", format(phoneLocationOnRobot));
-        ((VuforiaTrackableDefaultListener)target.getListener()).setPhoneInformation(phoneLocationOnRobot, parameters.cameraDirection);
+        ((VuforiaTrackableDefaultListener)target.getListener()).setPhoneInformation(phoneLocationOnRobot, builder.cameraDirection);
         telemetry.addData(">", "Press Play to start tracking");
         telemetry.update();
 
