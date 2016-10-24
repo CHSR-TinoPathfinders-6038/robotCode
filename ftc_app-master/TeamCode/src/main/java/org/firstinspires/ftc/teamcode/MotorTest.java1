@@ -1,4 +1,4 @@
-public class MRI_Motor_Power extends LinearOpMode (
+public class MotorTest.java1 extends LinearOpMode (
 
   DcMotor motor; 
   
