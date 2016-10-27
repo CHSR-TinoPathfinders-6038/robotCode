@@ -1,15 +1,14 @@
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-//Need to do manager.register("Gamepad Drive Tele-Op", GamepadDriveTeleOp.class);
-//need import respective classes
+@TeleOp(name="Concept: GamePadTest", group ="Concept")
 public class GamePadTest extends OpMode {
-	
-	
-	DcMotor leftWheel, rightWheel;
-	double leftWheelPower, rightWheelPower;
+
+	private DcMotor leftWheel, rightWheel;
+	private double leftWheelPower, rightWheelPower;
 	
 	@Override
 	public void init(){
